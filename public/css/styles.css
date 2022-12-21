@@ -1,16 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
 * {
-  font-family: Helvetica, sans-serif;
+  font-family: 'Plus Jakarta Sans', Helvetica, sans-serif;
   margin: 0;
   padding: 0;
 }
 
+body{
+  background-color: #181A20;
+  color: #FFFFFF;
+}
+
 #navbar {
-  padding: 1em 2em;
+  padding: 2em 4em;
   margin-bottom: 1em;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: royalblue;
+  background-color: #262A34;
   color: #fff;
 }
 
@@ -29,8 +36,8 @@
 }
 
 .container {
-  max-width: 450px;
-  margin: 2em auto;
+  max-width: 50vw;
+  margin: 20vh auto;
 }
 
 .container form {
@@ -45,53 +52,68 @@
 
 .form-control label {
   font-weight: bold;
-  margin-bottom: 0.3em;
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
 }
 
 .form-control input,
 .form-control textarea {
-  padding: 7px;
-  border-radius: 3px;
-  border: 1px solid #ccc;
+  padding: 1.2em;
+  border-radius: 10px;
+  color: silver;
+  background-color: #262A34;
+  border: none;
+  font-size: 1.1em;
+  font-weight: 500;  
+  text-decoration: none;
 }
 
 form input[type='submit'] {
   background-color: royalblue;
   color: #fff;
-  padding: 0.7em 1.5em;
+  padding: 1em 2em;
   font-weight: bold;
-  border-radius: 5px;
+  border-radius: 6px;
   border: none;
   cursor: pointer;
 }
 
 .task-list {
   list-style: none;
-  margin-top: 1em;
+  margin-top: 2em;
 }
 
 .task-list li {
-  padding: 0.5em;
+  padding: 2em;
   margin-bottom: 1em;
-  border-bottom: 1px solid #efefef;
   display: flex;
   justify-content: space-between;
+  background-color: #262A34;
+  border-radius: 16px;
+}
+
+.task-list li:hover {
+  cursor: pointer;
+  background-color: royalblue;
 }
 
 .task-list .title {
+  text-decoration: none;
   font-weight: bold;
-  color: royalblue;
+  color: silver;
   transition: 0.5s;
-  font-size: 1.2em;
+  font-size: 1.1em;
+  font-weight: 500;
 }
 
 .task-list .title:hover {
-  color: #333;
+  color: #181A20;
 }
 
 .title.done{
   text-decoration: line-through;
   color: silver;
+  opacity: 0.5;
 }
 
 .actions {
@@ -99,13 +121,19 @@ form input[type='submit'] {
 }
 
 .actions i {
-  font-size: 1.5em;
+  font-size: 1.8em;
   margin-right: 0.6em;
-  color: #333;
+  color: silver;
+}
+
+.bi.bi-pen{
+  font-size: 1.4em !important;
 }
 
 .actions i:hover {
-  color: royalblue;
+  transition: .4s;
+  color: #181A20;
+  filter: rotate(45deg);
 }
 
 .actions form{
@@ -118,3 +146,14 @@ form input[type='submit'] {
   cursor: pointer;
 }
 
+@media(max-width: 768px){
+
+  .container {
+    max-width: 90vw;
+  }
+  #navbar {
+    padding: 2em 2em;
+    font-size: .9em;
+  }
+
+}

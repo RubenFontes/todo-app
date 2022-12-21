@@ -1,5 +1,15 @@
+<img src="./public/images/banner-todo.png" alt="banner-todo" width="500">
+
 # About
-<p>Simple mvc todo-app build with express, mysql, sequelize and handlebars
+<p>Simple MVC Todo-app. Build with express, mysql, sequelize and handlebars
+
+## Environment variables
+- port = server_port_number
+- database=database_name
+- username=database_user
+- password=database_pass
+- host=server
+- dialect=database
 
 ## Install
 

@@ -1,8 +1,14 @@
 const { Sequelize } = require('sequelize')
 
-const sequelize = new Sequelize('mvc', 'root', '', {
-    host: 'localhost',
-    dialect: 'mysql'
+const database = 'mvc'
+const username = 'root'
+const password = ''
+const host = 'localhost'
+const dialect = 'mysql'
+
+const sequelize = new Sequelize(database, username, password, {
+    host: host,
+    dialect: dialect
 })
 
 try {
