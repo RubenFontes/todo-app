@@ -11,7 +11,7 @@
 - host=server
 - dialect=database
 
-## Build
+## Install
 
 ```bash
 $ git clone https://github.com/RubenFontes/todo-app.git
@@ -33,7 +33,7 @@ npm start
 ## View
   
 <server:port/route><br>
-<http://localhost:3000/tasks> (default)
+> Default: <http://localhost:3000/tasks>
   
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
